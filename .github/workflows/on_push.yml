@@ -1,0 +1,11 @@
+on:
+  push:
+    paths:
+      - "push/**"
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: push triggered
+        run: echo "push triggered"

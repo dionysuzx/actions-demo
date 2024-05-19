@@ -1,0 +1,11 @@
+on:
+  pull_request:
+    paths:
+      - "pr/**"
+
+jobs:
+  echo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: pr triggered
+        run: echo "pr triggered"
